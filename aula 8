@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class MetodosWrapper {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Usando Integer.parseInt()
+        System.out.print("Digite sua idade (em números): ");
+        String idadeStr = scanner.nextLine();
+        int idade = Integer.parseInt(idadeStr);
+        System.out.println("Sua idade + 10 anos será: " + (idade + 10))
+
+
+        // 2. Usando Character.isLetter()
+        System.out.print("Digite um caractere: ");
+        char caractere = s
+import java.util.Scanner;
+
+public class MetodosWrapper {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Usando Integer.parseInt()
+        System.out.print("Digite sua idade (em números): ");
+        String idadeStr = scanner.nextLine();
+        int idade = Integer.parseInt(idadeStr);
+        System.out.println("Sua idade + 10 anos será: " + (idade + 10));
+
+        // 2. Usando Character.isLetter()
+        System.out.print("Digite um caractere: ");
+        char caractere = scanner.nextLine().charAt(0);
+        boolean ehLetra = Character.isLetter(caractere);
+        System.out.println("É uma letra? " + ehLetra);
+
+        // 3. Usando String.toUpperCase()
+        System.out.print("Digite seu nome: ");
+        String nome = scanner.nextLine();
+        String nomeMaiusculo = nome.toUpperCase();
+        System.out.println("Seu nome em letras maiúsculas: " + nomeMaiusculo);
+
+        scanner.close();
+    }
+}
