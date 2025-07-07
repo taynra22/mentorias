@@ -1,0 +1,100 @@
+Atividade 01 - Simulando um sistema escolar, crie um algoritmo
+em Java que receba do aluno as 8 notas anuais. O algoritmo deve
+calcular as médias bimestrais, as médias semestrais, e a média
+final.
+Ao final dos cálculos, o algoritmo deve apresentar os resultados de
+forma clara. Por Exemplo:
+
+Práticas
+
+1o Bimestre: 6.0
+2o Bimestre: 7.0
+1o Semestre: 6.5
+----------------------
+3o Bimestre: 8.0
+4o Bimestre: 9.0
+2o Semestre: 8.5
+-----------------------
+Média Final: 7.5
+import java.util.Scanner;
+
+public class SistemaEscolar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double[] notas = new double[8];
+
+        // Entrada das 8 notas
+        System.out.println("Digite as 8 notas do ano:");
+        for (int i = 0; i < notas.length; i++) {
+            System.out.print("Nota " + (i + 1) + ": ");
+            notas[i] = scanner.nextDouble();
+        }
+
+        // Cálculo das médias
+        double mediaB1 = (notas[0] + notas[1]) / 2;
+        double mediaB2 = (notas[2] + notas[3]) / 2;
+        double semestre1 = (mediaB1 + mediaB2) / 2;
+
+        double mediaB3 = (notas[4] + notas[5]) / 2;
+        double mediaB4 = (notas[6] + notas[7]) / 2;
+        double semestre2 = (mediaB3 + mediaB4) / 2;
+
+        double mediaFinal = (semestre1 + semestre2) / 2;
+
+        // Saída formatada
+        System.out.println("\nPráticas");
+        System.out.printf("1º Bimestre: %.1f\n", mediaB1);
+        System.out.printf("2º Bimestre: %.1f\n", mediaB2);
+        System.out.printf("1º Semestre: %.1f\n", semestre1);
+        System.out.println("----------------------");
+        System.out.printf("3º Bimestre: %.1f\n", mediaB3);
+        System.out.printf("4º Bimestre: %.1f\n", mediaB4);
+        System.out.printf("2º Semestre: %.1f\n", semestre2);
+        System.out.println("----------------------");
+        System.out.printf("Média Final: %.1f\n", mediaFinal);
+
+        scanner.close();
+    }
+}
+
+
+Atividade 02 - Desenvolva um algoritmo em Java que receba como entrada
+uma temperatura em graus Celsius (°C) digitada pelo usuário. O programa
+deverá realizar a conversão dessa temperatura para as escalas Fahrenheit
+(°F) e Kelvin (K), utilizando as seguintes fórmulas de conversão:
+
+Fahrenheit (°F) = (Celsius (°C) × 9/5) + 32
+Kelvin (K) = Celsius (°C) + 273.15
+
+Ao final dos cálculos, o algoritmo deve exibir na tela o valor da temperatura
+original em Celsius, juntamente com os valores convertidos em Fahrenheit e
+Kelvin, de forma clara e informativa. Por exemplo:
+Práticas
+
+Temperatura em Celsius: 25.0 °C
+Temperatura em Fahrenheit: 77.0 °F
+Temperatura em Kelvin: 298.15 K
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada da temperatura em Celsius
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        double celsius = scanner.nextDouble();
+
+        // Cálculos
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        double kelvin = celsius + 273.15;
+
+        // Saída formatada
+        System.out.println("\nPráticas");
+        System.out.printf("Temperatura em Celsius: %.2f °C\n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F\n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K\n", kelvin);
+
+        scanner.close();
+    }
+}
+
