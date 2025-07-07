@@ -1,0 +1,22 @@
+Ao compreender que além dos tipos primitivos de dados, o Java
+oferece os tipos de referência (classes) correspondentes a todos os
+tipos primitivos, pesquise e identifique um método que lhes chame a
+atenção em cada classe dos tipos Wrapper: Integer, Double,
+Character, Boolean e String.
+Ao final implemente um pequeno algoritmo que utilize pelo
+menos três dos métodos pesquisados.
+import java.util.Scanner;
+
+public class MetodosWrapper {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Usando Integer.parseInt()
+        System.out.print("Digite sua idade (em números): ");
+        String idadeStr = scanner.nextLine();
+        int idade = Integer.parseInt(idadeStr);
+        System.out.println("Sua idade + 10 anos será: " + (idade + 10));
+
+        // 2. Usando Character.isLetter()
+        System.out.print("Digite um caractere: ");
+        char caractere = s
