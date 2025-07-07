@@ -1,0 +1,49 @@
+Questão-Problema 01: Cadastro de Aluno
+
+Um sistema de cadastro de alunos precisa armazenar as seguintes
+informações: o nome completo do aluno, sua idade, sua altura (em
+metros) e se ele está matriculado ou não.
+
+ Quais variáveis devem ser criadas?
+ Quais tipos de dados cada uma delas deve ter?
+| Informação             | Nome da Variável  | Tipo de Dado |
+| ---------------------- | ----------------- | ------------ |
+| Nome completo do aluno | `nomeCompleto`    | `String`     |
+| Idade                  | `idade`           | `int`        |
+| Altura (em metros)     | `altura`          | `double`     |
+| Está matriculado?      | `estaMatriculado` | `boolean`    |
+
+
+Questão-Problema 02: Informações de Produto
+
+Você foi contratado para criar um programa que registre informações
+de um produto. O programa deve armazenar: o nome do produto, sua
+quantidade em estoque, o preço unitário e se ele está disponível para
+venda.
+
+ Identifique as variáveis necessárias.
+ Determine os tipos de dados adequados para cada uma.
+| Informação                  | Nome da Variável    | Tipo de Dado |
+| --------------------------- | ------------------- | ------------ |
+| Nome do produto             | `nomeProduto`       | `String`     |
+| Quantidade em estoque       | `quantidadeEstoque` | `int`        |
+| Preço unitário              | `precoUnitario`     | `double`     |
+| Está disponível para venda? | `disponivelVenda`   | `boolean`    |
+
+
+Questão-Problema 03: Dados de um Evento
+
+Um organizador de eventos deseja criar um sistema para registrar os
+seguintes dados de um evento: o nome do evento, o número de
+
+participantes esperados, o preço do ingresso e se o evento será
+presencial.
+
+ Quais variáveis você criaria para representar essas informações?
+ Que tipos de dados você usaria para cada variável?
+| Informação                        | Nome da Variável      | Tipo de Dado |
+| --------------------------------- | --------------------- | ------------ |
+| Nome do evento                    | `nomeEvento`          | `String`     |
+| Número de participantes esperados | `numeroParticipantes` | `int`        |
+| Preço do ingresso                 | `precoIngresso`       | `double`     |
+| Será presencial?                  | `eventoPresencial`    | `boolean`    |
